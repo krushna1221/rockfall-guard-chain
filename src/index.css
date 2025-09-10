@@ -2,39 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Mining Safety Dashboard Design System - White Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    /* Core Theme - Clean White */
+    --background: 0 0% 98%;
+    --foreground: 220 10% 15%;
+    
+    /* Safety Status Colors */
+    --safe: 120 60% 50%;
+    --safe-foreground: 0 0% 100%;
+    --caution: 45 95% 55%;
+    --caution-foreground: 220 10% 15%;
+    --danger: 0 85% 60%;
+    --danger-foreground: 0 0% 100%;
+    
+    /* Mining Brand Colors */
+    --mining-primary: 200 40% 20%;
+    --mining-primary-foreground: 0 0% 98%;
+    --mining-secondary: 200 20% 85%;
+    --mining-secondary-foreground: 200 40% 20%;
+    
+    /* System Colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 220 10% 15%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --popover-foreground: 220 10% 15%;
+    
+    --primary: var(--mining-primary);
+    --primary-foreground: var(--mining-primary-foreground);
+    
+    --secondary: var(--mining-secondary);
+    --secondary-foreground: var(--mining-secondary-foreground);
+    
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 10% 50%;
+    
+    --accent: 200 30% 95%;
+    --accent-foreground: 200 40% 20%;
+    
+    --destructive: var(--danger);
+    --destructive-foreground: var(--danger-foreground);
+    
+    --border: 220 15% 90%;
+    --input: 220 15% 95%;
+    --ring: var(--mining-primary);
+    
+    /* Gradients */
+    --gradient-mining: linear-gradient(135deg, hsl(var(--mining-primary)), hsl(200 40% 35%));
+    --gradient-safe: linear-gradient(135deg, hsl(var(--safe)), hsl(120 60% 60%));
+    --gradient-caution: linear-gradient(135deg, hsl(var(--caution)), hsl(45 95% 65%));
+    --gradient-danger: linear-gradient(135deg, hsl(var(--danger)), hsl(0 85% 70%));
+    
+    /* Shadows */
+    --shadow-mining: 0 4px 20px hsl(var(--mining-primary) / 0.15);
+    --shadow-safe: 0 4px 20px hsl(var(--safe) / 0.15);
+    --shadow-caution: 0 4px 20px hsl(var(--caution) / 0.15);
+    --shadow-danger: 0 4px 20px hsl(var(--danger) / 0.15);
 
     --radius: 0.5rem;
 

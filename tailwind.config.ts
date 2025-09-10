@@ -19,6 +19,29 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        
+        /* Safety Status Colors */
+        safe: {
+          DEFAULT: "hsl(var(--safe))",
+          foreground: "hsl(var(--safe-foreground))",
+        },
+        caution: {
+          DEFAULT: "hsl(var(--caution))",
+          foreground: "hsl(var(--caution-foreground))",
+        },
+        danger: {
+          DEFAULT: "hsl(var(--danger))",
+          foreground: "hsl(var(--danger-foreground))",
+        },
+        
+        /* Mining Theme */
+        mining: {
+          DEFAULT: "hsl(var(--mining-primary))",
+          foreground: "hsl(var(--mining-primary-foreground))",
+          secondary: "hsl(var(--mining-secondary))",
+          "secondary-foreground": "hsl(var(--mining-secondary-foreground))",
+        },
+        
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
